@@ -10,19 +10,29 @@
 </head>
 
 <body>
+    <nav class="nav">
+        <img src="./assets/icons/nav/search_alt.svg">
+        <img src="./assets/icons/nav/ticket.svg">
+        <img src="./assets/icons/nav/folder.svg">
+        <img src="./assets/icons/nav/favorite.svg">
+        <img src="./assets/icons/nav/bookmark.svg">
+        <img src="./assets/icons/nav/tv.svg">
+        <img src="./assets/icons/nav/user_fill.svg">
+        <img src="./assets/icons/nav/sign_out.svg">
+    </nav>
     <header class="header">
         <div class="header-top wrapper">
             <img class="logo" src="./assets/Logo.svg" alt="Logo">
             <div class="header-top-user">
-                <img class="header-top-user-icon fire" src="./assets/icons/header/fire_fill.svg">
-                <img class="header-top-user-icon bell" src="./assets/icons/header/bell.svg">
+                <img src="./assets/icons/header/fire_fill.svg">
+                <img  src="./assets/icons/header/bell.svg">
                 <div class="header-top-user-info">
                     <img class="header-top-user-info-img" src="./assets/user-picto.png" alt="USER">
-                    <div>
-                        <h1>KINOMAN</h1>
+                    <div class="header-top-user-info-data">
+                        <h1 class="header-top-user-info-data-h1">Kinoman #294</h1>
                         <div>
                             <img class="header-top-user-icon bell" src="./assets/icons/header/time_icon.svg">
-                            <span>Активно</span>
+                            <span class="header-top-user-info-data-span">Активно</span>
                         </div>
                     </div>
                 </div>
@@ -31,23 +41,27 @@
 
         <div class='header-title wrapper'>
             <div class='header-title-content'>
-                <h2>Фильм</h2>
-                <h1>Дюна / dune ( 2021)</h1>
-                <div>
+                <div class="header-title-content-h2">
+                    <img src="./assets/fire-header-content.svg">
+                    <h2>Фильм</h2>
+                </div>
+                <h1 class="header-title-content-h1">Дюна / dune ( 2021)</h1>
+                <div class="header-title-content-info-spec">
                     <img src="./assets/icons/4k.svg">
-                    <span>Dune: Part One</span>
+                    <span class="header-title-content-span">Dune: Part One</span>
                 </div>
-                <p>Атрейдесы прибывают на планету, где им никто не рад. Тимоти Шаламе в фантастическом эпосе Дени
+                <p class="header-title-content-p">Атрейдесы прибывают на планету, где им никто не рад. Тимоти Шаламе в фантастическом эпосе Дени
                     Вильнёва</p>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="header-title-content-score">
+                    <div class="score">КП: <span class="score-orange">7.7</span></div>
+                    <div class="score">IMDB: <span class="score-orange">8.2</span></div>
+                    <div class="score">PG: <span class="score-orange">16+</span></div>
+                    <div class="score">ВРЕМЯ: <span class="score-orange">02:35</span></div>
                 </div>
-                <button class='header-title-content-btn'></button>
+                <button class='header-title-content-btn'>По подписке TVimo</button>
             </div>
-            <img src="./assets/movies/dune.png">
+            <img  src="./assets/movies/dune.png">
+            <div class="header-title-gif"></div>
         </div>
 
     </header>
@@ -55,45 +69,72 @@
     <main class="content wrapper">
 
         <section class="content-panel">
-            <h3>Новинки</h3>
+            <h5>Новинки</h5>
             <div class="content-panel-cards-main">
                 <div class="card content-panel-cards-main-first">
                     <img class="content-img" src="./assets/movies/fire.png">
                     <div class="card-content">
-                        <h1 class="card-title">Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing</h1>
-                        <button class="card-content-btn">Смотреть</button>
+                        <div class="card-content-hd">WEB-DLRip 1080p</div>
+                        <div class="card-content-data">
+                            <h1 class="card-title-big">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing</h1>
+                            <p class="card-content-p">Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur
+                                adipiscing </p>
+                            <div class="card-content-bottom">
+                                <div class="card-content-bottom-score-big score"><span>КП:  </span><div class="circle">7.7<img class="pie" src="./assets/pie.svg"></div></div>
+                                <div class="card-content-bottom-score-big score"><span>IMDB:  </span><div class="circle">8.2<img class="pie" src="./assets/pie.svg"></div></div>
+                                <button class="card-content-btn-large content-btn">Смотреть</button>  
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <img class="content-img" src="./assets/movies/hollywood.png">
                     <div class="card-content">
-                        <h1 class="card-title">Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing</h1>
-                        <button class="card-content-btn">Смотреть</button>
+                        <div class="card-content-hd">4K full-hd</div>
+                        <div class="card-content-data-small">
+                            <h1 class="card-title">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing</h1>
+                            <div class="card-content-bottom">
+                                <div class="card-content-bottom-score">
+                                    <div class="score">КП: <span class="score-orange">7.7</span></div>
+                                    <div class="score">IMDB: <span class="score-orange">7.7</span></div>
+                                </div>
+                                <button class="card-content-btn content-btn">Смотреть<span></span></button>  
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="content-img"src="./assets//movies/mortal.png">
+                    <img class="content-img" src="./assets//movies/mortal.png">
                     <div class="card-content">
-                        <h1 class="card-title">Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing</h1>
-                        <button class="card-content-btn">Смотреть</button>
+                        <div class="card-content-hd">4K full-hd</div>
+                        <div class="card-content-data-small">
+                            <h1 class="card-title">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing</h1>
+                            <div class="card-content-bottom">
+                                <div class="card-content-bottom-score">
+                                    <div class="score">КП: <span class="score-orange">7.7</span></div>
+                                    <div class="score">IMDB: <span class="score-orange">7.7</span></div>
+                                </div>
+                                <button class="card-content-btn content-btn">Смотреть<span></span></button>  
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card content-panel-cards-main-last">
                     <img class="content-img" src="./assets//movies/sword.png">
                     <div class="card-content">
-                        <h1 class="card-title">Lorem ipsum dolor sit amet, 
+                        <h1 class="card-title-last">Lorem ipsum dolor sit amet,
                             consectetur adipiscing</h1>
-                        <button class="card-content-btn">Смотреть</button>
                     </div>
+                    <button class="card-content-btn-special content-btn">Смотреть</button>
                 </div>
             </div>
         </section>
 
         <section class="content-panel">
-            <h3>Фильмы</h3>
+            <h5>Фильмы</h5>
             <div class="content-panel-cards">
                 <img class="content-img" src="./assets/movies/ghost.png">
                 <img class="content-img" src="./assets/movies/touch.png">
@@ -107,7 +148,7 @@
         </section>
 
         <section class="content-panel">
-            <h3>Сериалы</h3>
+            <h5>Сериалы</h5>
             <div class="content-panel-cards">
                 <img class="content-img" src="./assets/movies/boys.png">
                 <img class="content-img" src="./assets/movies/fleabag.png">
@@ -116,7 +157,7 @@
             </div>
         </section>
         <section class="content-panel">
-            <h3>Мультфильмы</h3>
+            <h5>Мультфильмы</h5>
             <div class="content-panel-cards">
                 <img class="content-img" src="./assets/movies/transylvania.png">
                 <img class="content-img" src="./assets/movies/paw.png">
@@ -125,7 +166,7 @@
             </div>
         </section>
         <section class="content-panel">
-            <h3>Аниме</h3>
+            <h5>Аниме</h5>
             <div class="content-panel-cards">
                 <img class="content-img" src="./assets/movies/castle.png">
                 <img class="content-img" src="./assets/movies/spirited.png">
@@ -143,7 +184,7 @@
             <p>© 2022, Tvimo, может содержать информацию, не предназначенную для несовершеннолетних</p>
             <div class="footer-content-feedback">
                 <div class="footer-content-feedback-ask">ЗАДАТЬ ВОПРОС</div>
-                <div class="footer-content-feedback-faq">СПРАВКА</div>
+                <div class="footer-content-feedback-ask">СПРАВКА</div>
             </div>
         </div>
     </footer>
