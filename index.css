@@ -195,6 +195,7 @@ font-style: normal;
 font-weight: 300;
 font-size: 16px;
 line-height: 24px;
+margin-bottom: 20px;
 }
 
 
@@ -241,6 +242,7 @@ line-height: 14px;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  flex: 1;
 }
 
 .content-panel {
